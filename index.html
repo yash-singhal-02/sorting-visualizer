@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Sorting Algorithm Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Chart.js for Complexity Graph -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="header">
+    <h1 style="font-size: 22px;">Interactive Sorting Algorithm Visualizer</h1>
+
+    <div class="controls">
+      <label>Algorithm:</label>
+      <select id="algo">
+        <option value="bubble">Bubble Sort</option>
+        <option value="merge">Merge Sort</option>
+        <option value="heap">Heap Sort</option>
+        <option value="quick">Quick Sort</option>
+        <option value="insertion">Insertion Sort</option>
+        <option value="selection">Selection Sort</option>
+      </select>
+
+      <label>Size:</label>
+      <input type="range" id="sizeSlider" min="10" max="80" value="40">
+
+      <label>Speed:</label>
+      <input type="range" id="speedSlider" min="10" max="200" value="100">
+
+      <button onclick="generateBars()">Shuffle</button>
+      <button onclick="startSort()">Sort</button>
+    </div>
+
+    <div class="manual-input">
+      <input type="text" id="manualInput" placeholder="Enter numbers e.g. 10,20,30">
+      <button onclick="setInputArray()">Set Input</button>
+    </div>
+
+    <div id="algo-info">
+      <!-- Algorithm info will be inserted here by script.js -->
+    </div>
+
+    <div class="chart-area">
+      <canvas id="complexityChart"></canvas>
+      <div class="legend">
+        <span style="color: green;">■</span> Best &nbsp;
+        <span style="color: orange;">■</span> Average &nbsp;
+        <span style="color: red;">■</span> Worst
+      </div>
+    </div>
+  </div>
+
+  <div id="bars-container"></div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

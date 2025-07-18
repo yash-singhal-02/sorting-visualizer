@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* Jet Black background */
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  color: white; /* Pure White text */
+}
+
+.header {
+  padding: 10px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: white; /* Pure White */
+}
+
+.controls,
+.manual-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px;
+}
+
+input[type="range"] {
+  width: 100px;
+  accent-color: #9b59b6; /* Purple accent */
+}
+
+.manual-input input {
+  width: 250px;
+  padding: 5px;
+  background-color: #1e1e1e; /* Dark Gray input background */
+  color: white;
+  border: 1px solid #333333; /* Dim Gray border */
+  border-radius: 4px;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #9b59b6; /* Purple button */
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #8e44ad; /* Darker Purple on hover */
+}
+
+select {
+  padding: 5px;
+  background-color: #1e1e1e;
+  color: white;
+  border: 1px solid #333333;
+  border-radius: 4px;
+}
+
+#algo-info {
+  font-size: 14px;
+  margin: 8px auto;
+  max-width: 90%;
+  background: #1e1e1e;
+  padding: 10px;
+  border-radius: 6px;
+  line-height: 1.4;
+  color: white;
+}
+
+.chart-area {
+  width: 90%;
+  max-width: 600px;
+  margin: 10px auto 0;
+}
+
+canvas {
+  max-height: 150px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.legend {
+  color: lightgray;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+#bars-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 250px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.bar {
+  background-color: #9b59b6; /* Purple bars */
+  margin: 0 1px;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+}
+
+.bar.highlighted {
+  background-color: orange;
+}
+
+.bar.sorted {
+  background-color: limegreen;
+}
