@@ -2,7 +2,7 @@
 
 A beginner-friendly project to visualize how various sorting algorithms work using animated bars and graphical complexity comparison.
 
-![Preview Screenshot](Screenshot 2025-07-18 222835.png)
+![Preview Screenshot](screenshot.png)
 
 ---
 
@@ -35,3 +35,33 @@ A beginner-friendly project to visualize how various sorting algorithms work usi
 
 ## 💻 Folder Structure
 
+
+```text
+sorting-visualizer/
+├── index.html                 # Main HTML file  
+├── style.css                  # Styling for the visualizer  
+├── script.js                  # Main JavaScript logic  
+├── screenshot.png             # Preview image for README  
+└── algorithms/                # Folder containing individual sorting algorithm files  
+    ├── bubbleSort.js  
+    ├── selectionSort.js  
+    ├── insertionSort.js  
+    ├── mergeSort.js  
+    ├── quickSort.js  
+    └── heapSort.js  
+
+```
+## 📈 Technologies Used
+
+- **HTML5** – Structure of the application  
+- **CSS3** – Custom styling with a dark purple theme  
+- **JavaScript (ES6)** – Core logic, animations, and DOM interaction  
+- **Chart.js** – Used for visualizing time complexity in a bar chart  
+- **VS Code Live Server** – For local testing and real-time updates
+  
+## 🙋‍♂️ Author
+
+**Yash Singhal**  
+2nd Year B.Tech CSE Student  
+Lovely Professional University  
+🔗 [GitHub](https://github.com/yash-singhal-02)
